@@ -35,6 +35,11 @@
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
   onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
 
+  // Hide gallery section if no photos are present
+  const gal = $('#gallery');
+  const galCheck = () => { if (gal && !gal.querySelector('.gal-grid img')) gal.remove(); };
+  window.addEventListener('load', () => setTimeout(galCheck, 300));
+
   // Reveal on scroll
   const els = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {

@@ -214,3 +214,16 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   form{padding:1.5rem}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* photos (all optional: hidden automatically if a file is missing) */
+.hero-photo{position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;z-index:-1;opacity:.45;-webkit-mask-image:linear-gradient(to left,#000 30%,transparent);mask-image:linear-gradient(to left,#000 30%,transparent)}
+.pcard-img{position:absolute!important;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32;z-index:0;-webkit-mask-image:linear-gradient(to top,transparent,#000 70%);mask-image:linear-gradient(to top,transparent,#000 70%);transition:.5s}
+.pcard.feature:hover .pcard-img{transform:scale(1.05);opacity:.45}
+.about-photo{grid-column:1/-1;border-radius:var(--r);overflow:hidden;aspect-ratio:16/8;border:1px solid var(--line)}
+.about-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s}
+.about-photo:hover img{transform:scale(1.04)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:.8rem}
+.gal-grid img{width:100%;height:100%;object-fit:cover;border-radius:14px;border:1px solid var(--line);transition:.5s}
+.gal-grid img:first-child{grid-column:span 2;grid-row:span 2}
+.gal-grid img:hover{transform:scale(1.02);filter:brightness(1.1)}
+@media(max-width:700px){.gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.hero-photo{width:100%;opacity:.25}}
