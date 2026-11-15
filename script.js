@@ -21,9 +21,28 @@
     a.rel = 'noopener';
   });
 
-  // Close mobile menu on click
-  document.querySelectorAll('#menu a').forEach((a) =>
-    a.addEventListener('click', () => $('#menu').classList.remove('open')));
+  $('#phoneBook').textContent = C.phoneDisplay;
+  $('#addrBook').textContent = C.address;
+
+  // Mobile menu
+  const burger = $('#burger'), menu = $('#menu');
+  const setMenu = (open) => { menu.classList.toggle('open', open); burger.classList.toggle('open', open); burger.setAttribute('aria-expanded', open); };
+  burger.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+
+  // Nav background on scroll
+  const nav = $('#nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Reveal on scroll
+  const els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((en) => en.forEach((x) => {
+      if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); }
+    }), { threshold: 0.12 });
+    els.forEach((el, i) => { el.style.transitionDelay = (i % 3) * 90 + 'ms'; io.observe(el); });
+  } else els.forEach((el) => el.classList.add('in'));
 
   // Booking form
   const form = $('#bookForm');
