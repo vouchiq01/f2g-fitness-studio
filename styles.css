@@ -452,3 +452,17 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .book form textarea{height:64px}
   .book form .btn{padding:.9rem 1rem}
 }
+
+/* phone: compact footer */
+@media(max-width:700px){
+  .foot-top{grid-template-columns:1fr 1fr;gap:1.6rem 1rem;padding-block:2.2rem 1.4rem}
+  .f-brand,.f-col:last-child{grid-column:1/-1}
+  .f-brand p{font-size:.85rem;max-width:none;margin-top:.6rem;line-height:1.5}
+  .f-brand .rate{margin-top:.6rem}
+  .f-brand .soc{margin-top:.9rem}
+  .soc a{width:36px;height:36px}
+  .f-col{gap:.45rem;font-size:.85rem}
+  .f-col h5{font-size:.68rem;margin-bottom:.2rem}
+  .f-col p{font-size:.82rem;line-height:1.45}
+  .foot-bar-in{padding-block:1rem;font-size:.74rem}
+}
