@@ -30,6 +30,20 @@
   burger.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
   menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
 
+  // In-page links: scroll smoothly without adding #section to the URL
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id === '#' || id.length < 2) return;           // e.g. tel links handled elsewhere
+      const t = document.querySelector(id);
+      if (!t) return;
+      e.preventDefault();
+      t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+
   // Nav background on scroll
   const nav = $('#nav');
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
