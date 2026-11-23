@@ -305,3 +305,20 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .hero{min-height:calc(100vh - 50px);min-height:calc(100svh - 50px)}
 .marquee{margin:0;transform:none;box-shadow:none}
 .track{padding:.8rem 0}
+
+/* booking balance: lighter, more compact form + richer left column */
+.book-in{align-items:stretch}
+.book-in>div:first-child{display:flex;flex-direction:column;justify-content:center}
+.book form{background:#fbfdf9;border:0;padding:1.9rem;gap:.9rem;box-shadow:0 40px 80px -40px rgba(0,40,15,.7)}
+.book form label{color:#46584c}
+.book form input,.book form select,.book form textarea{background:#f0f6ee;color:#0b1a10;border:1px solid rgba(10,45,22,.14);padding:.8rem .95rem}
+.book form input::placeholder,.book form textarea::placeholder{color:#8a9a8f}
+.book form input:focus,.book form select:focus,.book form textarea:focus{border-color:#12a14a;box-shadow:0 0 0 3px rgba(18,161,74,.18)}
+.book form .fine{color:#5a6b5f}
+.book form input[type=date]{color-scheme:light}
+.book form textarea{min-height:0}
+.perks{display:grid;gap:.8rem;margin:0 0 1.6rem}
+.perk{display:flex;gap:1rem;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:16px;padding:1rem 1.2rem}
+.perk .ic{width:40px;height:40px;padding:9px;border-radius:12px;background:#0b2a16;color:#c4f26a}
+.perk b{display:block;color:#fff;font-weight:600}
+.perk span{font-size:.88rem;color:#e3f5e3}
