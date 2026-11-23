@@ -336,3 +336,23 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
 .faq details p{padding:0 0 1.3rem;color:#46584c;line-height:1.65}
 @media(max-width:900px){.faq-in{grid-template-columns:1fr;gap:2rem}}
+
+/* phone hero polish */
+@media(max-width:700px){
+  .hero{min-height:0;align-items:flex-start}
+  .hero-in{padding-top:6.6rem;padding-bottom:2.4rem;gap:2rem}
+  .pill{font-size:.72rem;padding:.4rem .85rem;margin-bottom:1.2rem}
+  .hero h1{font-size:clamp(2.7rem,13.2vw,4.3rem);line-height:.95;margin-bottom:1.1rem}
+  .hero h1 span{display:block}
+  .hero h1 .red{display:inline}
+  .lead{font-size:1rem;line-height:1.6}
+  .hero-photo{opacity:.2;width:100%}
+  .hero .cta{margin:1.5rem 0 .6rem;gap:.7rem}
+  .hero .cta .btn{padding:.95rem 1.2rem}
+  .rate{margin-top:1rem;font-size:.82rem}
+  .hero-card{padding:1.4rem;border-radius:20px}
+  .hero-card h3{font-size:1.8rem;margin-bottom:.6rem}
+  .nav{padding:.9rem 18px}
+  .logo b{font-size:1.7rem}
+  .big-f2g{display:none}
+}
