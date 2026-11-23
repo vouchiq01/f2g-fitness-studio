@@ -495,3 +495,12 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .nav.scrolled .logo img{height:46px}
 .site-foot .logo img{height:84px}
 @media(max-width:700px){.logo img{height:44px}.nav.scrolled .logo img{height:40px}.site-foot .logo img{height:66px}}
+
+/* phone header: fixed height, no size change on scroll, own compositing layer (keeps logo from clipping/jumping) */
+.nav{transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;will-change:transform}
+@media(max-width:820px){
+  .nav,.nav.scrolled{height:64px;padding-block:0;padding-inline:18px;align-items:center}
+  .logo{display:flex;align-items:center;height:64px}
+  .logo img,.nav.scrolled .logo img{height:44px;width:auto;max-height:44px}
+  .burger{align-self:center}
+}
