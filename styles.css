@@ -373,3 +373,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 /* no swoosh line under the logo */
 .logo b::after{display:none}
 .logo{padding-bottom:0}
+
+/* phone: hide the repeated free-trial card in the hero (buttons already say it) */
+@media(max-width:700px){
+  .hero-card{display:none}
+  .hero-in{padding-bottom:3rem}
+  .hero{min-height:calc(100svh - 50px);align-items:center}
+}
