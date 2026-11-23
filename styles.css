@@ -430,3 +430,25 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .why-item p{margin:.1rem 0 0;font-size:.8rem;line-height:1.35;color:#53655a}
   .about-text h2{font-size:2rem}
 }
+
+/* phone: compact booking section */
+@media(max-width:700px){
+  .book .wrap{padding-block:2.8rem}
+  .book-in{gap:1.6rem}
+  .book h2{font-size:2rem;margin-bottom:.6rem}
+  .book .lead.sm{font-size:.9rem;margin-bottom:1rem}
+  .perks{grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:1rem}
+  .perk{flex-direction:column;text-align:center;gap:.4rem;padding:.7rem .4rem;border-radius:14px}
+  .perk .ic{width:30px;height:30px;padding:7px;border-radius:10px}
+  .perk b{font-size:.74rem;line-height:1.15}
+  .perk span{display:none}
+  .contact-list{gap:.6rem;margin-top:.4rem;font-size:.88rem}
+  .contact-list li{gap:.7rem}
+  .contact-list .ic{width:18px;height:18px}
+  .book form{padding:1.2rem;gap:.7rem;border-radius:20px}
+  .book form label{font-size:.62rem;gap:.25rem}
+  .book form input,.book form select,.book form textarea{padding:.65rem .8rem;font-size:.9rem;border-radius:10px}
+  .book form .row{grid-template-columns:1fr 1fr;gap:.6rem}
+  .book form textarea{height:64px}
+  .book form .btn{padding:.9rem 1rem}
+}
