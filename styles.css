@@ -412,3 +412,9 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .pcard.wide{padding:1.1rem 1.2rem}
   .about-photo{aspect-ratio:16/10}
 }
+@media(max-width:560px){
+  .pgrid{grid-template-columns:1fr 1fr}
+  .pcard.feature,.pcard.wide{grid-column:1/-1}
+  .pcard:not(.feature):not(.wide) h3{font-size:1.15rem}
+  .pcard:not(.feature):not(.wide) p{font-size:.78rem;line-height:1.4}
+}
