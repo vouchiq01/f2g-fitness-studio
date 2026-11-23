@@ -393,3 +393,22 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .m-stats span{display:block;margin-top:.25rem;font-size:.7rem;color:#cdd6cf;line-height:1.2}
   .hero-photo{opacity:.3}
 }
+
+/* phone: compact cards */
+@media(max-width:560px){
+  .why{grid-template-columns:1fr 1fr;gap:.7rem}
+  .why-item{padding:1rem .9rem;border-radius:14px}
+  .why-item .ic.lg{width:24px;height:24px}
+  .why-item h4{font-size:.98rem;margin:.55rem 0 .2rem;line-height:1.1}
+  .why-item p{font-size:.78rem;line-height:1.4}
+  .pgrid{gap:.8rem}
+  .pcard{min-height:0;padding:1.3rem 1.2rem;gap:.4rem}
+  .pcard .ic.xl{width:30px;height:30px}
+  .pcard h3{font-size:1.35rem;margin-top:.6rem}
+  .pcard p{font-size:.85rem}
+  .pcard .num{font-size:2.2rem;top:.6rem;right:1rem}
+  .pcard.feature{min-height:240px}
+  .pcard.feature h3{font-size:1.9rem}
+  .pcard.wide{padding:1.1rem 1.2rem}
+  .about-photo{aspect-ratio:16/10}
+}
