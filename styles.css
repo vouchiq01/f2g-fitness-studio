@@ -380,3 +380,16 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .hero-in{padding-bottom:3rem}
   .hero{min-height:calc(100svh - 50px);align-items:center}
 }
+
+/* phone hero: compact, no empty space */
+.m-stats{display:none}
+@media(max-width:700px){
+  .hero{min-height:0;align-items:flex-start}
+  .hero-in{padding-top:6.4rem;padding-bottom:2.4rem}
+  .hero .rate{display:none}
+  .m-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:1.6rem;list-style:none}
+  .m-stats li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);border-radius:14px;padding:.8rem .5rem;text-align:center}
+  .m-stats b{display:block;font:800 1.5rem/1 'Barlow Condensed';color:var(--gold)}
+  .m-stats span{display:block;margin-top:.25rem;font-size:.7rem;color:#cdd6cf;line-height:1.2}
+  .hero-photo{opacity:.3}
+}
