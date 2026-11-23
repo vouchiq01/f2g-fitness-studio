@@ -514,3 +514,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .nav{position:sticky;top:0;left:auto;right:auto;margin-bottom:-64px}
 }
 .logo,.burger{position:relative;z-index:61}
+
+/* agency credit line */
+.foot-credit{border-top:1px solid var(--line);padding-block:1rem 1.2rem;text-align:center;font-size:.8rem;color:#7d867d}
+.foot-credit a{transition:.2s}
+.foot-credit a:hover{color:#fff}
+.foot-credit .vq{color:var(--gold);font-weight:600}
+@media(max-width:700px){.foot-credit{padding-bottom:4.6rem;line-height:1.7;font-size:.74rem}.foot-bar-in{padding-bottom:1rem}}
