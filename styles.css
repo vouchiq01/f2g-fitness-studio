@@ -250,3 +250,20 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .chips{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.8rem}
 .chips span{border:1px solid var(--line);background:rgba(255,255,255,.03);padding:.45rem 1rem;border-radius:999px;font-size:.82rem;color:#d4d0c6}
 @media(max-width:900px){.rgrid{grid-template-columns:1fr}}
+
+/* full footer */
+.site-foot{background:#050a07;border-top:1px solid var(--line);color:#b9bfb7;font-size:.92rem}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:3rem;padding-block:4rem 3rem}
+.f-brand p{margin-top:1rem;max-width:300px;line-height:1.6}
+.f-brand .rate{margin-top:1rem}
+.f-brand .soc{margin-top:1.4rem}
+.f-col{display:flex;flex-direction:column;gap:.7rem}
+.f-col h5{font:700 .75rem Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.f-col a{transition:.2s}
+.f-col a:hover{color:var(--red2)}
+.f-col p{line-height:1.6}
+.foot-bar{border-top:1px solid var(--line)}
+.foot-bar-in{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:1.4rem;font-size:.82rem;color:#7d867d}
+.foot-bar a:hover{color:var(--red2)}
+@media(max-width:900px){.foot-top{grid-template-columns:1fr 1fr;gap:2.4rem}}
+@media(max-width:560px){.foot-top{grid-template-columns:1fr}}

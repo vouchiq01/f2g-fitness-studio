@@ -22,6 +22,10 @@
   });
 
   $('#phoneBook').textContent = C.phoneDisplay;
+  $('#fAddr').textContent = C.address;
+  $('#fHours').textContent = C.hours;
+  $('#fPhone').textContent = C.phoneDisplay;
+  $('#fDir').href = $('#dirBtn').href;
   $('#addrBook').textContent = C.address;
 
   // Mobile menu
