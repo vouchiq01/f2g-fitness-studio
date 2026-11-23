@@ -267,3 +267,36 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .foot-bar a:hover{color:var(--red2)}
 @media(max-width:900px){.foot-top{grid-template-columns:1fr 1fr;gap:2.4rem}}
 @media(max-width:560px){.foot-top{grid-template-columns:1fr}}
+
+/* light sections for contrast */
+.light{--bg:#f3f8f1;--bg2:#e7f0e4;--card:#ffffff;--line:rgba(10,45,22,.12);--text:#0b1a10;--muted:#53655a;--gold:#0b7a37;--red2:#0c8a3f;background:#f3f8f1;color:#0b1a10}
+.band{box-shadow:0 0 0 100vmax #f3f8f1;clip-path:inset(0 -100vmax)}
+.light .red{color:#0c8a3f}
+.light h2,.light h3,.light h4{color:#0b1a10}
+.light .eyebrow{color:#0b7a37}
+.light .about-text p,.light .lead{color:#3f5146}
+.light .why-item,.light .pcard,.light .plan{background:#fff;border-color:rgba(10,45,22,.12);box-shadow:0 18px 40px -28px rgba(10,60,25,.35)}
+.light .pcard .num{color:rgba(10,45,22,.08)}
+.light .pcard::before{background:radial-gradient(circle at 100% 0,rgba(34,197,94,.18),transparent 60%)}
+.light .pcard.feature{background:linear-gradient(170deg,#0e2a18,#0a1510 70%);border-color:rgba(74,222,128,.35);color:#f5f2ec;--muted:#b6c4b8;--red2:#4ade80;--gold:#c4f26a}
+.light .pcard.feature h3{color:#fff}
+.light .pcard.wide{background:#fff}
+.light .link-arrow{color:#0b7a37}
+.light .btn-ghost{border-color:rgba(10,45,22,.35);color:#0b1a10;background:transparent}
+.light .btn-ghost:hover{background:#0b1a10;color:#fff}
+.light .steps li{border-top-color:rgba(10,45,22,.18)}
+.light .steps li:first-child{border-color:#12a14a}
+.light .steps b{-webkit-text-stroke:1.5px #12a14a}
+.light .plan ul{color:#33463a}
+.light .plan li .ic{color:#12a14a}
+.light .plan.hot{background:linear-gradient(170deg,#0e2a18,#0a1510 70%);border-color:#4ade80;color:#f5f2ec;--muted:#b6c4b8;box-shadow:0 30px 60px -30px rgba(10,80,30,.6)}
+.light .plan.hot h3{color:#fff}
+.light .plan.hot ul{color:#d6e2d8}
+.light .plan.hot li .ic{color:#4ade80}
+.light .tag{background:#c4f26a;color:#0a1405}
+/* booking: bold green band */
+.book{background:radial-gradient(60% 90% at 100% 0,rgba(196,242,106,.25),transparent 70%),linear-gradient(135deg,#0d7a38,#12a14a 55%,#0b6a30)!important;border-block:0}
+.book .eyebrow{color:#e7ffb8}.book h2 .red{color:#e7ffb8}
+.book .lead,.book .contact-list li,.book p{color:#eaf8ea}
+.book .contact-list .ic{color:#e7ffb8}
+.book .contact-list a:hover{color:#fff}
