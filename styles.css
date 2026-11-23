@@ -467,3 +467,18 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .foot-bar-in{padding-block:1rem;font-size:.74rem}
 }
 @media(max-width:700px){.foot-bar-in{padding-bottom:4.6rem}}
+
+/* phone: compact Find us */
+@media(max-width:700px){
+  .loc{gap:1.2rem}
+  .info{gap:.9rem}
+  .info-row{gap:.7rem}
+  .info-row .ic{width:20px;height:20px;margin-top:.15rem}
+  .info-row h4{font-size:.95rem}
+  .info-row p{font-size:.85rem;line-height:1.4}
+  .info .cta{flex-wrap:nowrap;gap:.6rem;margin:.3rem 0 0}
+  .info .cta .btn{flex:1 1 0;padding:.8rem .6rem;font-size:.75rem;white-space:nowrap}
+  .info .link-arrow{margin-top:.2rem;font-size:.82rem}
+  .mapbox{min-height:0;height:220px;border-radius:16px}
+  .mapbox iframe{min-height:0;height:220px}
+}
