@@ -489,3 +489,9 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .nav.scrolled .logo img{height:40px}
 .site-foot .logo img{height:56px}
 @media(max-width:700px){.logo img{height:38px}.nav.scrolled .logo img{height:36px}.site-foot .logo img{height:48px}}
+
+/* new transparent logo (taller aspect) */
+.logo img{height:54px}
+.nav.scrolled .logo img{height:46px}
+.site-foot .logo img{height:84px}
+@media(max-width:700px){.logo img{height:44px}.nav.scrolled .logo img{height:40px}.site-foot .logo img{height:66px}}
