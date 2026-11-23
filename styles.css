@@ -322,3 +322,17 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .perk .ic{width:40px;height:40px;padding:9px;border-radius:12px;background:#0b2a16;color:#c4f26a}
 .perk b{display:block;color:#fff;font-weight:600}
 .perk span{font-size:.88rem;color:#e3f5e3}
+
+/* FAQ (light) */
+.faq-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
+.faq .lead.sm{margin-bottom:1.6rem}
+.faq .btn{color:#031208}
+.faq-list{display:grid;gap:.8rem}
+.faq details{background:#fff;border:1px solid rgba(10,45,22,.12);border-radius:16px;padding:0 1.4rem;transition:.3s;box-shadow:0 14px 30px -26px rgba(10,60,25,.4)}
+.faq details[open]{border-color:#12a14a}
+.faq summary{list-style:none;cursor:pointer;padding:1.2rem 2rem 1.2rem 0;font-weight:600;color:#0b1a10;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font:400 1.6rem/1 Inter;color:#12a14a;transition:.3s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{padding:0 0 1.3rem;color:#46584c;line-height:1.65}
+@media(max-width:900px){.faq-in{grid-template-columns:1fr;gap:2rem}}
