@@ -369,3 +369,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .logo b{font-family:'Russo One','Arial Black',sans-serif;font-weight:400;font-size:1.6rem;letter-spacing:.03em;text-transform:none;line-height:1}
 .logo span{font-family:'Russo One','Arial Black',sans-serif;font-weight:400;font-style:italic;font-size:.58rem;letter-spacing:.22em;transform:skewX(-8deg)}
 @media(max-width:700px){.logo b{font-size:1.4rem}}
+
+/* no swoosh line under the logo */
+.logo b::after{display:none}
+.logo{padding-bottom:0}
