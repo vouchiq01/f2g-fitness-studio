@@ -418,3 +418,15 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .pcard:not(.feature):not(.wide) h3{font-size:1.15rem}
   .pcard:not(.feature):not(.wide) p{font-size:.78rem;line-height:1.4}
 }
+
+/* phone-only redesign of the About highlights: one card, compact icon rows */
+@media(max-width:700px){
+  .why{display:block;background:#fff;border:1px solid rgba(10,45,22,.12);border-radius:20px;overflow:hidden;box-shadow:0 22px 44px -30px rgba(10,60,25,.45)}
+  .about-photo{border:0;border-radius:0;aspect-ratio:16/9;box-shadow:none}
+  .why-item,.light .why-item{display:grid;grid-template-columns:42px 1fr;column-gap:.9rem;align-items:center;background:transparent;border:0;border-top:1px solid rgba(10,45,22,.1);border-radius:0;padding:.85rem 1rem;box-shadow:none}
+  .why-item:hover{transform:none}
+  .why-item .ic.lg{grid-row:1/3;width:42px;height:42px;padding:10px;border-radius:50%;background:#e4f3e8;color:#0c8a3f}
+  .why-item h4{margin:0;font-size:1rem;line-height:1.15}
+  .why-item p{margin:.1rem 0 0;font-size:.8rem;line-height:1.35;color:#53655a}
+  .about-text h2{font-size:2rem}
+}
