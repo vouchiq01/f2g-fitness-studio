@@ -301,6 +301,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .book .contact-list .ic{color:#e7ffb8}
 .book .contact-list a:hover{color:#fff}
 
-/* hero fills the first screen so the strip only shows after scrolling */
-.hero{min-height:100vh;min-height:100svh}
-.marquee{margin-top:2.2rem}
+/* hero + strip together fill the first screen: strip fully visible at the bottom on load */
+.hero{min-height:calc(100vh - 66px);min-height:calc(100svh - 66px)}
+.marquee{margin:0;transform:none;box-shadow:none}
+.track{padding:.8rem 0}
