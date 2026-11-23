@@ -300,3 +300,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .book .lead,.book .contact-list li,.book p{color:#eaf8ea}
 .book .contact-list .ic{color:#e7ffb8}
 .book .contact-list a:hover{color:#fff}
+
+/* hero + strip together fill the first screen: straight strip fully visible at the bottom on load */
+.hero{min-height:calc(100vh - 50px);min-height:calc(100svh - 50px)}
+.marquee{margin:0;transform:none;box-shadow:none}
+.track{padding:.8rem 0}
