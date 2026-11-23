@@ -44,7 +44,7 @@ h4{font-size:1.15rem;font-weight:700;letter-spacing:.03em}
 
 /* nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 28px;transition:.3s}
-.nav.scrolled{background:rgba(9,9,11,.85);backdrop-filter:blur(14px);padding-block:.7rem;border-bottom:1px solid var(--line)}
+.nav.scrolled{background:rgba(5,10,7,.9);backdrop-filter:blur(14px);padding-block:.7rem;border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:baseline;gap:.5rem}
 .logo b{font-size:2rem;font-weight:900;letter-spacing:.02em}
 .logo span{font:600 .62rem Inter;letter-spacing:.3em;color:var(--red2);text-transform:uppercase}
