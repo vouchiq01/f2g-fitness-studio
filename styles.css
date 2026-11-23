@@ -482,3 +482,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
   .mapbox{min-height:0;height:220px;border-radius:16px}
   .mapbox iframe{min-height:0;height:220px}
 }
+
+/* official F2G logo image */
+.logo{display:block;padding:0;line-height:0}
+.logo img{height:46px;width:auto;display:block;transition:.3s}
+.nav.scrolled .logo img{height:40px}
+.site-foot .logo img{height:56px}
+@media(max-width:700px){.logo img{height:38px}.nav.scrolled .logo img{height:36px}.site-foot .logo img{height:48px}}
