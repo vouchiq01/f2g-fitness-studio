@@ -26,6 +26,7 @@
   $('#fHours').textContent = C.hours;
   $('#fPhone').textContent = C.phoneDisplay;
   $('#fDir').href = $('#dirBtn').href;
+  $('#dockDir').href = $('#dirBtn').href;
   $('#addrBook').textContent = C.address;
 
   // Mobile menu
