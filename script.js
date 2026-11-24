@@ -12,7 +12,7 @@
   $('#dirBtn').href = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(C.mapsQuery);
   $('#igBtn').href = $('#igFoot').href = C.instagram;
   $('#gBtn').href = C.googleProfile;
-  document.querySelectorAll('[data-tel]').forEach((a) => (a.href = 'tel:+' + C.whatsapp));
+  document.querySelectorAll('[data-tel]').forEach((a) => (a.href = 'tel:+' + (C.phone || C.whatsapp)));
 
   // WhatsApp links with pre-filled messages
   document.querySelectorAll('[data-wa]').forEach((a) => {

@@ -521,3 +521,42 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;back
 .foot-credit a:hover{color:#fff}
 .foot-credit .vq{color:var(--gold);font-weight:600}
 @media(max-width:700px){.foot-credit{padding-bottom:4.6rem;line-height:1.7;font-size:.74rem}.foot-bar-in{padding-bottom:1rem}}
+
+/* ===== Programs redesign: sticky intro + numbered list rows ===== */
+.prog-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:4.5rem;align-items:start}
+.prog-intro{position:sticky;top:96px}
+.prog-intro .lead.sm{margin-bottom:1.6rem;color:#3f5146}
+.prog-photo{margin-top:2rem;border-radius:20px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 30px 60px -36px rgba(10,60,25,.55)}
+.prog-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.prog-list{border-top:1px solid rgba(10,45,22,.16)}
+.prog{display:grid;grid-template-columns:44px 52px 1fr 40px;gap:1.1rem;align-items:center;padding:1.5rem .6rem;border-bottom:1px solid rgba(10,45,22,.16);color:#0b1a10;position:relative;transition:padding .3s,background .3s}
+.prog::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,rgba(34,197,94,.14),transparent);transition:width .35s}
+.prog:hover{padding-left:1.4rem}
+.prog:hover::before{width:100%}
+.prog>*{position:relative}
+.p-num{font:800 1.5rem 'Barlow Condensed';color:rgba(10,45,22,.35)}
+.p-ic{width:52px;height:52px;border-radius:50%;background:#e1f3e6;color:#0c8a3f;display:grid;place-items:center;transition:.3s}
+.p-ic .ic{width:26px;height:26px}
+.p-txt h3{font-size:1.7rem;margin:0 0 .15rem;color:#0b1a10}
+.p-txt p{font-size:.93rem;line-height:1.5;color:#53655a;margin:0;max-width:46ch}
+.p-go{width:40px;height:40px;border-radius:50%;border:1px solid rgba(10,45,22,.25);display:grid;place-items:center;color:#0b1a10;transition:.3s}
+.prog:hover .p-ic{background:#0c8a3f;color:#fff}
+.prog:hover .p-go{background:#0b1a10;border-color:#0b1a10;color:#c4f26a;transform:translateX(4px)}
+.prog:hover .p-num{color:#0c8a3f}
+@media(max-width:1000px){
+  .prog-layout{grid-template-columns:1fr;gap:2rem}
+  .prog-intro{position:static}
+  .prog-photo{display:none}
+}
+@media(max-width:700px){
+  .prog-layout{gap:1.4rem}
+  .prog{grid-template-columns:34px 1fr 28px;gap:.8rem;padding:1rem .2rem}
+  .p-num{display:none}
+  .p-ic{width:34px;height:34px}
+  .p-ic .ic{width:18px;height:18px}
+  .p-txt h3{font-size:1.2rem}
+  .p-txt p{font-size:.8rem;line-height:1.4}
+  .p-go{width:28px;height:28px}
+  .p-go .ic{width:14px;height:14px}
+  .prog:hover{padding-left:.2rem}
+}
