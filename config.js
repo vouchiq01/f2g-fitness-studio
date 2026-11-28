@@ -9,7 +9,7 @@ window.F2G = {
   instagram: "https://www.instagram.com/f2gfitnessstudio/",
   googleProfile: "https://share.google/Ua58SanAqBl4fI33R",
   mapsQuery: "F2G Fitness Studio, Hoodi Main Rd, Ayyappa Nagar, Bengaluru 560036",
-  hours: "Mon–Fri: 5:30 AM – 10:00 PM · Sat–Sun: 6:00 AM – 12:00 PM",
+  hours: "Mon–Sat: 5:30 AM – 10:00 PM · Sun: 7:00 AM – 6:00 PM",
 
   // Supabase (optional). Leave blank to skip saving; WhatsApp still works.
   supabaseUrl: "",
